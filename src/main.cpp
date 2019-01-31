@@ -10,7 +10,8 @@
  * serial port connection, and receives key press events via the same serial port connection.
  */
 
-#include "Arduino.h"
+#include <Arduino.h>
+#include "vw_headunit.h"
 
 #ifndef LED_BUILTIN
 #define LED_BUILTIN 13
@@ -20,6 +21,8 @@ void setup() {
   Serial.begin(9660);
 
   pinMode(LED_BUILTIN, OUTPUT);
+
+  vw_headunit_spi_init();
 }
 
 void loop() {
@@ -27,4 +30,22 @@ void loop() {
   delay(1000);
   digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
+}
+
+/**
+ * Setup external interrupt zero.
+ *
+ * See: https://www.microchip.com/webdoc/AVRLibcReferenceManual/group__avr__interrupts.html
+ */
+ISR(INT0_vect) {
+
+}
+
+/**
+ * Setup external interrupt one.
+ *
+ * See: https://www.microchip.com/webdoc/AVRLibcReferenceManual/group__avr__interrupts.html
+ */
+ISR(INT1_vect) {
+
 }
