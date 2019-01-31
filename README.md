@@ -3,10 +3,14 @@
 An Arduino, AVR-based CD changer emulator for Volkswagen car audio head units, allowing bidirectional communication
 with the in-car stereo system over a serial connection from the board to another device.
 
+![VEE-DUB IN ZE HAUS JA](./site/vw.gif)
+
 ## Use Case
 
 VW head units speak an ill-documented protocol with CD changer devices located usually in the back of the car. My goal
 is to replace my [PhatNoise Media System](./PHATNOISE.md) with an arbitrary computing platform.
+
+![Architecture](./site/architecture.png)
 
 My motivation in creating this VW CD Changer Emulator is to make a simple embedded board which will allow me to build
 my own [PhatNoise-esque](./PHATNOISE.md) system with complete control over the head unit. The architecture I'm currently
