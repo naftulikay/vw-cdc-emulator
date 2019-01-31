@@ -5,7 +5,7 @@ SHELL:=$(shell which bash)
 .PHONY: build clean deploy deps python-deps
 
 python-deps:
-	@pip2 install -q $(shell test -z "$$TRAVIS" && echo "--user") -r requirements.txt
+	@pip2 install -q --user -r requirements.txt
 
 deps: python-deps
 
