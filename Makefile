@@ -30,3 +30,6 @@ test: build
 
 deploy: build
 	@platformio run --target upload
+
+monitor: deps
+	@platformio device monitor
