@@ -40,8 +40,8 @@ Licensed at your discretion under either:
  - [Apache Software License, Version 2.0](./LICENSE-APACHE)
  - [MIT License](./LICENSE-MIT)
 
- [build]: https://github.com/naftulikay/vw-cdc-emulator
- [build.svg]: https://github.com/naftulikay/vw-cdc-emulator.svg?branch=master
+ [build]: https://travis-ci.org/naftulikay/vw-cdc-emulator
+ [build.svg]: https://travis-ci.org/naftulikay/vw-cdc-emulator.svg?branch=master
  [phatnoise.rs]: https://github.com/naftulikay/phatnoise.rs
  [serial]: https://en.wikipedia.org/wiki/Serial_port
  [spi]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
