@@ -1,0 +1,18 @@
+---
+dist: trusty
+sudo: false
+
+language: c
+python: 2.7
+
+cache:
+  pip: true
+  directories:
+    - .pioenvs
+
+script: make clean build
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
